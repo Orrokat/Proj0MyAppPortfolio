@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.com.example.susan.project0myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#e4e2e2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleMyNano"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="#2b2bd9"
+        android:textSize="24sp"
+        android:background="#e4e2e2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app1SpotifyStreamer"
+        android:id="@+id/button"
+        android:onClick="launchSpotify"
+        android:background="#f08c35"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        style="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app2ScoresApp"
+        android:id="@+id/button2"
+        android:onClick="launchScores"
+        android:background="#F08C35"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        style="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app3LibraryApp"
+        android:id="@+id/button3"
+        android:onClick="launchLibrary"
+        android:background="#F08C35"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        style="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app4BuildItBigger"
+        android:id="@+id/button4"
+        android:onClick="launchBuildIt"
+        android:background="#F08C35"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app5XYZReader"
+        android:id="@+id/button5"
+        android:onClick="launchReader"
+        android:background="#F08C35"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        style="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app6Capstone"
+        android:id="@+id/button6"
+        android:onClick="launchCapstone"
+        android:background="#2b2bd9"
+        android:layout_below="@+id/button5"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        style="@style/buttons"
+        android:textColor="#ffffff" />
+</RelativeLayout>
